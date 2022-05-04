@@ -1,0 +1,22 @@
+{
+    "AddressBookList": [
+      {
+        "_firstName": "Roshni",
+        "_address": "vijay nagar",
+        "_city": "Indore",
+        "_state": "MadhyaPradesh",
+        "_zip": "123231",
+        "_phoneNum": "91 3776466723",
+        "id": 1
+      },
+      {
+        "_firstName": "Ramsing",
+        "_address": "Mumbai",
+        "_city": "Mumbai",
+        "_state": "Maharashtra",
+        "_zip": "126455",
+        "_phoneNum": "91 3776466723",
+        "id": 2
+      }
+    ]
+  }

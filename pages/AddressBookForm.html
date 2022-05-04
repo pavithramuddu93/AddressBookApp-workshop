@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="..\css\addressBook_form.css">
+    <title>AddressBook</title>
+    <script defer src="..\js\AddressBookDetails.js"></script>
+    <script defer src="..\js\addressBook_form.js"></script>
+    <script defer src="..\js\service.js"></script>
+
+</head>
+<body>
+    <header class="header-content header" >
+        <div class="logo-content">
+            <img src="..\asset\icons\address-book-icon.png" alt="logo" width="40" height="50">
+            <div>
+                <span class="emp-text">ADDRESS</span><br>
+                <span class="emp-text emp-payroll">BOOK</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save(event)">
+            <div class="cross">
+                <button class="crossButton"><a href="./home.html" style="color: white; text-decoration: none;">X</a></button>
+            </div>
+            <div class="form-head">PERSON ADDRESS FORM
+            </div>
+            <div class="row-content">
+                    <input class="input" type="text" id="name" name="name"
+                    placeholder="Your Name" required>        
+                    <error-output class="text-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <input type="text" class="input" id="phone" name="phone" placeholder="Phone Number">  
+                <error-output class="phoneError" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                    <input id="address" class="input" name="address" placeholder=" Your Address" style="height:100px" required>
+                    <error-output class="addressError" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                    <div class="select-row">
+                        <select name="city" id="city" required>
+                            <option value="">Select City</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Dehli">Dehli</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Betul">Betul</option>
+                        </select>
+                        <select name="state" id="state" required>
+                            <option value="">Select state</option>
+                            <option value="MadhyaPradesh">MadhyaPradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Dehli">Dehli</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Meghalay">Meghalay</option>
+                        </select>
+                        <input type="text" id="zip" name="zip" placeholder="Zip Code">
+                        <error-output class="zipError" for="text"></error-output>
+                    </div>
+            </div>
+            <div class="buttonParent">
+                <button type="submit" class="button submitButton" id="submitButton" >Add</button>                      
+                <button type="reset" class="button resetButton" >Reset</button>
+            </div>   
+        </form>
+    </div>
+</body>
+</html>
